@@ -5,7 +5,7 @@ COMMENT-server=	PostgreSQL RDBMS (server)
 COMMENT-docs=	PostgreSQL RDBMS documentation
 COMMENT-contrib=PostgreSQL RDBMS contributions
 
-VERSION=	9.1.4
+VERSION=	9.2.1
 DISTNAME=	postgresql-${VERSION}
 PKGNAME-main=	postgresql-client-${VERSION}
 PKGNAME-server=	postgresql-server-${VERSION}
@@ -51,6 +51,8 @@ USE_GROFF =	Yes
 CONFIGURE_STYLE=gnu
 
 INCLUDES=	${LOCALBASE}/include /usr/include/kerberosV
+
+# for F in main server contrib ; do mv pkg/PLIST-${F} pkg/PLIST-${F}.tmp ; sed -e 's,lib/postgresql/,lib/,g' pkg/PLIST-${F}.tmp > pkg/PLIST-${F} ; rm pkg/PLIST-${F}.tmp ; done
 CONFIGURE_ARGS=	--disable-rpath --with-openssl=/usr \
 		--with-perl \
 		--enable-integer-datetimes \
@@ -58,7 +60,7 @@ CONFIGURE_ARGS=	--disable-rpath --with-openssl=/usr \
 		--datadir="${PREFIX}/share/postgresql" \
 		--docdir="${PREFIX}/share/doc/postgresql" \
 		--with-includes="${INCLUDES}" \
-		--with-libraries="${LOCALBASE}/lib" \
+		--with-libraries="${PREFIX}/lib" \
 		--with-system-tzdata="/usr/share/zoneinfo" \
 		--with-openssl \
 		--with-ossp-uuid \

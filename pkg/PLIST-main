@@ -73,20 +73,20 @@ lib/libpq.a
 @comment lib/libpq.so
 @comment lib/libpq.so.5
 @lib lib/libpq.so.${LIBpq_VERSION}
-lib/postgresql/
-lib/postgresql/pgxs/
-lib/postgresql/pgxs/config/
-lib/postgresql/pgxs/config/install-sh
-lib/postgresql/pgxs/src/
-lib/postgresql/pgxs/src/Makefile.global
-lib/postgresql/pgxs/src/Makefile.port
-lib/postgresql/pgxs/src/Makefile.shlib
-lib/postgresql/pgxs/src/makefiles/
-lib/postgresql/pgxs/src/makefiles/pgxs.mk
-lib/postgresql/pgxs/src/nls-global.mk
-lib/postgresql/pgxs/src/test/
-lib/postgresql/pgxs/src/test/regress/
-@bin lib/postgresql/pgxs/src/test/regress/pg_regress
+lib/
+lib/pgxs/
+lib/pgxs/config/
+lib/pgxs/config/install-sh
+lib/pgxs/src/
+lib/pgxs/src/Makefile.global
+lib/pgxs/src/Makefile.port
+lib/pgxs/src/Makefile.shlib
+lib/pgxs/src/makefiles/
+lib/pgxs/src/makefiles/pgxs.mk
+lib/pgxs/src/nls-global.mk
+lib/pgxs/src/test/
+lib/pgxs/src/test/regress/
+@bin lib/pgxs/src/test/regress/pg_regress
 @man man/man1/clusterdb.1
 @man man/man1/createdb.1
 @man man/man1/createlang.1
