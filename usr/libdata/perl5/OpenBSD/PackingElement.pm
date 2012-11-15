@@ -610,7 +610,7 @@ sub format
 		    chdir($dir) or die "Can't chdir to $dir";
 		    },
 		    OpenBSD::Paths->groff,
-		    qw(-mandoc -mtty-char -E -Ww -Tascii -P -c),
+		    qw(-M/usr/share/groff/current/tmac -mandoc -mtty-char -E -Ww -F/usr/share/groff/current/font -Tascii -P -c), # mv -i /usr/local/share/groff/1.21/* /usr/share/groff/current/
 		    @extra, '--', $file);
 	} else {
 		die "Can't parse source name $fname";

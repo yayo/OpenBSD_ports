@@ -6,7 +6,7 @@
 	rc.d
 	..
     ..
-    usr
+    tmp
 	local
 	    bin
 	    ..

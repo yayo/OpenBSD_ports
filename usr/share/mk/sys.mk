@@ -34,7 +34,7 @@ CC?=		cc
 
 PIPE?=		-pipe
 
-CFLAGS?=	-O2 ${PIPE} ${DEBUG}
+CFLAGS?=	-O3 ${PIPE} ${DEBUG}
 COMPILE.c?=	${CC} ${CFLAGS} ${CPPFLAGS} -c
 LINK.c?=	${CC} ${CFLAGS} ${CPPFLAGS} ${LDFLAGS}
 

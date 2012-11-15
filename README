@@ -1,0 +1,6 @@
+# SRC DEVEL PLIST BIN
+for D in distfiles pobj plist packages ; do ln -s /tmp/${D}/ /usr/ports/${D} ; done
+
+F=? && (cd /usr/ports/distfiles/ && for H in md5 rmd160 sha1 sha256 ; do echo -n ${H} | tr 'a-z' 'A-Z' ; echo -n " (${F}) = " ;openssl dgst -${H} -binary ${F} | openssl enc -a ; done && echo -n "SIZE (${F}) = ";stat -f %z ${F})
+
+PREFIX=/tmp/local LOCALBASE=/tmp/local make package 

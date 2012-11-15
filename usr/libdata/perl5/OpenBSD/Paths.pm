@@ -36,7 +36,7 @@ sub pkg_add() { '/usr/sbin/pkg_add' }
 sub chmod() { '/bin/chmod' }	# external command is used for symbolic modes.
 sub gzip() { '/usr/bin/gzip' }
 sub ftp() { $ENV{'FETCH_CMD'} || '/usr/bin/ftp' }
-sub groff() { '/usr/local/bin/groff' }
+sub groff() { '/usr/bin/groff' } # mv -i /usr/local/bin/{groff,grotty,troff,tbl} /usr/bin/
 sub sh() { '/bin/sh' }
 sub arch() { '/usr/bin/arch' }
 sub uname() { '/usr/bin/uname' }
