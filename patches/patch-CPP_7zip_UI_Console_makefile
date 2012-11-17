@@ -1,0 +1,11 @@
+--- CPP/7zip/UI/Console/makefile	Tue Dec 22 17:34:40 2009
++++ CPP/7zip/UI/Console/makefile	Tue Dec 22 17:34:40 2009
+@@ -11,7 +11,7 @@
+ 
+ PCH_NAME=$(PRE_COMPILED_HEADER)
+ 
+-LIBS=$(LOCAL_LIBS_DLL)
++LIBS=$(LOCAL_LIBS_DLL) -lkvm
+ 
+ CONSOLE_OBJS = \
+   ConsoleClose.o \
