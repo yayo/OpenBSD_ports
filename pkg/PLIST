@@ -31,7 +31,6 @@ share/examples/qemu/target-x86_64.conf
 share/qemu/
 share/qemu/bamboo.dtb
 share/qemu/bios.bin
-share/qemu/cpus-x86_64.conf
 share/qemu/keymaps/
 share/qemu/keymaps/ar
 share/qemu/keymaps/common
@@ -70,7 +69,6 @@ share/qemu/keymaps/th
 share/qemu/keymaps/tr
 share/qemu/kvmvapic.bin
 share/qemu/linuxboot.bin
-share/qemu/mpc8544ds.dtb
 share/qemu/multiboot.bin
 share/qemu/openbios-ppc
 share/qemu/openbios-sparc32

@@ -5,14 +5,14 @@ BROKEN-hppa=	compiler bug with gcc 4.2
 
 COMMENT=	multi system emulator
 
-DISTNAME=	qemu-1.1.0-1
-PKGNAME=	qemu-1.1.0
+DISTNAME=	qemu-1.3.0-rc0
+PKGNAME=	qemu-1.3.0
 REVISION=	0
 CATEGORIES=	emulators
 MASTER_SITES=	http://wiki.qemu.org/download/
 EXTRACT_SUFX=	.tar.bz2
 
-WRKDIST=	${WRKDIR}/qemu-1.1.0
+WRKDIST=	${WRKDIR}/qemu-1.3.0-rc0
 
 HOMEPAGE=	http://www.qemu.org/
 
