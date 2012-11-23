@@ -70,7 +70,8 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--disable-uuid \
 		--disable-usb-redir \
 		--disable-vnc-sasl \
-		--disable-vnc-tls
+		--disable-vnc-tls \
+		--target-list=x86_64-softmmu
 
 .if ${MACHINE_ARCH:Msparc}
 CONFIGURE_ARGS+=--sparc_cpu=v7
