@@ -74,7 +74,7 @@ $OpenBSD: patch-ls_c,v 1.13 2011/11/12 12:31:21 naddy Exp $
  		f_grouponly = 0;
  
 +	/* Enabling of colours is conditional on the environment. */
-+	if (getenv("CLICOLOR") &&
++	if (
 +	    (isatty(STDOUT_FILENO) || getenv("CLICOLOR_FORCE")))
 +#ifdef COLORLS
 +		if (tgetent(termcapbuf, getenv("TERM")) == 1) {
