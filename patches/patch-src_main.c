@@ -1,6 +1,6 @@
---- src/main.c	Sun Aug  8 13:09:55 2010
-+++ src/main.c	Sun Aug  8 13:09:55 2010
-@@ -558,6 +558,16 @@
+--- src/main.c      Thu Mar  7 23:32:54 2013
++++ src/main.c      Mon Jul  1 18:02:14 2013
+@@ -554,6 +554,16 @@
      debug_break_level = params.use_debug_break_level;
  #endif
 
@@ -14,6 +14,6 @@
 +    do_cmdline_cmd("set et");
 +    do_cmdline_cmd("set ts=1");
 +
-     /* Execute --cmd arguments. */
-     exe_pre_commands(&params);
- 
+ #ifdef FEAT_MZSCHEME
+     /*
+      * Newer version of MzScheme (Racket) require earlier (trampolined)

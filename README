@@ -1,2 +1,3 @@
+# /usr/share/mk/sys.mk : O2 -> O3
 PREFIX=/usr LOCALBASE=/usr FLAVOR=no_x11 make
-tar -C /usr/ports/pobj/vim-7.3.154-no_x11/vim73/runtime/ -cf - filetype.vim syntax/ | tar -C /usr/share/vim/ -xf -
+tar -C /usr/ports/pobj/vim-7.4.135-no_x11/vim-7.4.135/runtime/ -cf - filetype.vim syntax/ | tar -C /usr/share/vim/ -xf -
