@@ -6,7 +6,7 @@ $OpenBSD: patch-polipo_h,v 1.3 2010/03/20 21:32:23 kili Exp $
  #endif
  
 +#include <pwd.h>
-+#define POLIPO_USER	"_polipo"
++#define POLIPO_USER	"root"
 +
  #if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 199901L
  /* nothing */
