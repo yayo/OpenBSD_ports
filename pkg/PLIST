@@ -16,8 +16,6 @@ share/doc/tor/tor.html
 @comment share/doc/tor/torify.html
 share/examples/tor/
 @sample ${SYSCONFDIR}/tor/
-share/examples/tor/tor-tsocks.conf
-@sample ${SYSCONFDIR}/tor/tor-tsocks.conf
 share/examples/tor/torrc.sample
 @sample ${SYSCONFDIR}/tor/torrc
 @mode 0700

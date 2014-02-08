@@ -2,7 +2,7 @@
 
 COMMENT=	anonymity service using onion routing
 
-DISTNAME=	tor-0.2.3.25
+DISTNAME=	tor-0.2.4.20
 REVISION=	0
 CATEGORIES=	net
 HOMEPAGE=	http://www.torproject.org/
@@ -21,6 +21,7 @@ CONFIGURE_STYLE=gnu
 # anyway on FRAME_GROWS_DOWN archs.
 CONFIGURE_ARGS=	--with-ssl-dir=/usr \
 		--disable-gcc-hardening
+CONFIGURE_ENV=	CFLAGS="-O3"
 
 DB_DIR=		/var/tor
 SUBST_VARS+=	DB_DIR
