@@ -4,7 +4,7 @@ COMMENT-main =	GIT - Tree History Storage Tool
 COMMENT-svn =	GIT - subversion interoperability tools
 COMMENT-x11 =	GIT - graphical tools
 
-V =		1.8.5.3
+V =		1.9.3
 DISTNAME =	git-${V}
 PKGNAME-main =	${DISTNAME}
 PKGNAME-svn =	git-svn-${V}
@@ -64,7 +64,10 @@ CONFIGURE_ARGS =	--sysconfdir=${SYSCONFDIR} \
 			--mandir=${PREFIX}/man \
 			--with-curl=${LOCALBASE} \
 			--with-iconv=${LOCALBASE} \
-			--with-tcltk=${MODTK_BIN} \
+			--with-expat \
+			--with-libpcre \
+			--with-pager="" \
+			--with-tcltk=no \
 			--with-python=no
 CONFIGURE_ENV =		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib" \
